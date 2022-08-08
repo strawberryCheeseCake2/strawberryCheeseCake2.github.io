@@ -27,6 +27,7 @@ sass:
 
 # Exclude from processing.
 exclude:
+  - vendor/bundle/ruby/2.6.0
   - Gemfile
   - Gemfile.lock
   - LICENSE.text
