@@ -1,0 +1,11 @@
+current directory: /Users/kmg/Desktop/React/strawberryCheeseCake2.github.io/vendor/bundle/ruby/2.6.0/gems/wdm-0.1.1/ext/wdm
+/Users/kmg/.rbenv/versions/2.6.10/bin/ruby -I /Users/kmg/.rbenv/versions/2.6.10/lib/ruby/2.6.0 -r ./siteconf20220804-8177-4zw5dq.rb extconf.rb
+
+current directory: /Users/kmg/Desktop/React/strawberryCheeseCake2.github.io/vendor/bundle/ruby/2.6.0/gems/wdm-0.1.1/ext/wdm
+make "DESTDIR=" clean
+
+current directory: /Users/kmg/Desktop/React/strawberryCheeseCake2.github.io/vendor/bundle/ruby/2.6.0/gems/wdm-0.1.1/ext/wdm
+make "DESTDIR="
+
+current directory: /Users/kmg/Desktop/React/strawberryCheeseCake2.github.io/vendor/bundle/ruby/2.6.0/gems/wdm-0.1.1/ext/wdm
+make "DESTDIR=" install

@@ -1,0 +1,16 @@
+current directory: /Users/kmg/Desktop/React/strawberryCheeseCake2.github.io/vendor/bundle/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/Users/kmg/.rbenv/versions/2.6.10/bin/ruby -I /Users/kmg/.rbenv/versions/2.6.10/lib/ruby/2.6.0 -r ./siteconf20220804-8177-1oeowy1.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kmg/Desktop/React/strawberryCheeseCake2.github.io/vendor/bundle/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /Users/kmg/Desktop/React/strawberryCheeseCake2.github.io/vendor/bundle/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+current directory: /Users/kmg/Desktop/React/strawberryCheeseCake2.github.io/vendor/bundle/ruby/2.6.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20220804-8177-97368j

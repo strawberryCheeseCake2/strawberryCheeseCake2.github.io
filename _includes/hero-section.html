@@ -1,0 +1,96 @@
+<!-- hero area -->
+<section class="hero-area bg-primary" id="parallax">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-11 mx-auto">
+        <!-- <h1 class="text-black font-tertiary">{{ site.data.settings.hero.hero-title }}</h1> -->
+        <h2 class="text-black font-tertiary">
+          <span style="font-weight: bold" class="display-3">꿈</span
+          ><span style="font-weight: bold" class="display-2">나</span
+          ><span style="font-weight: bold" class="display-1">무</span
+          > 개발자,
+        </h2>
+        <h1 style="font-weight: bold">
+          <span style="background-color: #282c34; color: aliceblue" class="p-2">김민규</span
+          ><span class="display-4">입니다</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div class="layer-bg d-flex pr-5 flex-row-reverse">
+    <img
+      style="width: 25%"
+      class="img-fluid mr-5"
+      src="{{ site.baseurl }}/assets/images/illustrations/portfolio-bg.png"
+      alt="bg-shape"
+    />
+    <!-- <img class="img-fluid w-100" src="{{ site.baseurl }}/assets/images/illustrations/leaf-bg.png" alt="bg-shape"> -->
+  </div>
+  <div class="layer" id="l2">
+    <img
+      src="{{ site.baseurl }}/assets/images/illustrations/dots-cyan.png"
+      alt="bg-shape"
+    />
+  </div>
+  <div class="layer" id="l3">
+    <img
+      src="{{ site.baseurl }}/assets/images/illustrations/leaf-orange.png"
+      alt="bg-shape"
+    />
+  </div>
+  <div class="layer" id="l4">
+    <img
+      src="{{ site.baseurl }}/assets/images/illustrations/dots-orange.png"
+      alt="bg-shape"
+    />
+  </div>
+  <div class="layer" id="l5">
+    <img
+      src="{{ site.baseurl }}/assets/images/illustrations/leaf-yellow.png"
+      alt="bg-shape"
+    />
+  </div>
+  <div class="layer" id="l6">
+    <img
+      src="{{ site.baseurl }}/assets/images/illustrations/leaf-cyan.png"
+      alt="bg-shape"
+    />
+  </div>
+  <div class="layer" id="l7">
+    <img
+      src="{{ site.baseurl }}/assets/images/illustrations/dots-group-orange.png"
+      alt="bg-shape"
+    />
+  </div>
+  <div class="layer" id="l8">
+    <img
+      src="{{ site.baseurl }}/assets/images/illustrations/leaf-pink-round.png"
+      alt="bg-shape"
+    />
+  </div>
+  <div class="layer" id="l9">
+    <img
+      src="{{ site.baseurl }}/assets/images/illustrations/leaf-cyan-2.png"
+      alt="bg-shape"
+    />
+  </div>
+  <!-- social icon -->
+  <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+    {% for social in site.data.settings.social %}
+    <li class="mb-3">
+      <a style="font-weight: bold; color: black;" class="" href="{{ social.link }}"
+        >Github</a>
+    </li>
+    {% endfor %}
+  </ul>
+  <!-- <ul>
+    <li>
+      <a href="https://github.com/strawberryCheeseCake2">
+        <img style="width: 50px; height: 50px; margin-left: 2rem; margin-top: 1rem;" src="../assets/images/icons/github-icon.png"/>
+      </a>
+    </li>
+  </ul> -->
+
+  <!-- /social icon -->
+</section>
+<!-- /hero area -->
