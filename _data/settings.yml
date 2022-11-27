@@ -164,7 +164,7 @@ portfolio-items:
       - type: "design"
       - type: "React JS"
   - image: "assets/images/portfolio/airbnb.jpg"
-    url: "https://github.com/strawberryCheeseCake2/airbnbClone"
+    url: "https://github.com/strawberryCheeseCake2/jumMeChu"
     portfolio-type:
       - type: "design"
       - type: "React JS"
