@@ -146,9 +146,9 @@ services:
 # Portfolio Home Section
 portfolio-home-items:
   - image: "assets/images/portfolio/1.png"
-    url: "https://github.com/strawberryCheeseCake2/airbnbClone"
-  - image: "assets/images/portfolio/airbnb.jpg"
     url: "https://github.com/strawberryCheeseCake2/jumMeChu"
+  - image: "assets/images/portfolio/airbnb.jpg"
+    url: "https://github.com/strawberryCheeseCake2/airbnbClone"
 
 
 
@@ -159,12 +159,12 @@ portfolio-label:
 
 portfolio-items:
   - image: "assets/images/portfolio/1.png"
-    url: "https://github.com/strawberryCheeseCake2/airbnbClone"
+    url: "https://github.com/strawberryCheeseCake2/jumMeChu"
     portfolio-type:
       - type: "design"
       - type: "React JS"
   - image: "assets/images/portfolio/airbnb.jpg"
-    url: "https://github.com/strawberryCheeseCake2/jumMeChu"
+    url: "https://github.com/strawberryCheeseCake2/airbnbClone"
     portfolio-type:
       - type: "design"
       - type: "React JS"
