@@ -82,10 +82,10 @@ team:
 
 skills-title: Skills
 skills:
-  - { name: Searching Skill, color: "#F8CB2E", value: "97%" }
+  - { name: React JS, color: "#bdecf6", value: "80%" }
   - { name: HTML & CSS, color: "#fdb157", value: "90%" }
-  - { name: React JS, color: "#bdecf6", value: "70%" }
-  - { name: Javascript, color: "#ffbcaa", value: "70%" }
+  - { name: Javascript, color: "#ffbcaa", value: "90%" }
+  - { name: Redux, color: "#F8CB2E", value: "60%" }
 
 #-------------------------------
 # Exprerience Section
@@ -145,8 +145,10 @@ services:
 
 # Portfolio Home Section
 portfolio-home-items:
-  - image: "assets/images/portfolio/crown.png"
-    url: "https://github.com/strawberryCheeseCake2/crwn-clothing"
+  - image: "https://images.unsplash.com/photo-1657256031855-68029292ff34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+    url: "https://github.com/strawberryCheeseCake2/airbnbClone"
+  - image: "https://user-images.githubusercontent.com/46309433/203910424-d6ab121b-0810-4cc5-8cde-85e7a2022e87.png"
+    url: "https://github.com/strawberryCheeseCake2/jumMeChu"
 
 
 
@@ -156,8 +158,13 @@ portfolio-label:
   - { title: "React JS", type: "design" }
 
 portfolio-items:
-  - image: "assets/images/portfolio/crown.png"
-    url: "https://github.com/strawberryCheeseCake2/crwn-clothing"
+  - image: "https://images.unsplash.com/photo-1657256031855-68029292ff34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+    url: "https://github.com/strawberryCheeseCake2/airbnbClone"
+    portfolio-type:
+      - type: "design"
+      - type: "React JS"
+  - image: "https://user-images.githubusercontent.com/46309433/203910424-d6ab121b-0810-4cc5-8cde-85e7a2022e87.pngg"
+    url: "https://github.com/strawberryCheeseCake2/airbnbClone"
     portfolio-type:
       - type: "design"
       - type: "React JS"
