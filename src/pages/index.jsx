@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby';
+import { graphql, withPrefix } from 'gatsby';
 import get from 'lodash/get';
 import React from 'react';
 
@@ -12,6 +12,34 @@ import SectionProjects from '../components/section-projects';
 import SectionSkills from '../components/section-skills';
 import SEO from '../components/seo';
 
+const isExternalUrl = (value = '') => /^https?:\/\//i.test(value);
+
+const normalizeThumbnailPath = (value = '') =>
+  value
+    .replace(/^\.\//, '')
+    .replace(/^\/+/, '')
+    .replace(/^src\/images\//, '')
+    .replace(/^images\//, '');
+
+const buildImageLookup = (files = []) =>
+  files.reduce((lookup, file) => {
+    const normalizedPath = normalizeThumbnailPath(file.relativePath);
+
+    lookup[normalizedPath] = withPrefix(file.publicURL);
+    lookup[`src/images/${normalizedPath}`] = withPrefix(file.publicURL);
+    lookup[`images/${normalizedPath}`] = withPrefix(file.publicURL);
+
+    return lookup;
+  }, {});
+
+const resolveThumbnailSrc = (thumbnail, imageLookup) => {
+  if (!thumbnail) return '';
+  if (isExternalUrl(thumbnail) || thumbnail.startsWith('/')) return thumbnail;
+
+  const normalizedPath = normalizeThumbnailPath(thumbnail);
+  return imageLookup[thumbnail] || imageLookup[normalizedPath] || '';
+};
+
 const Index = ({ data }) => {
   const about = get(data, 'site.siteMetadata.about', false);
   const projects = get(data, 'site.siteMetadata.projects', false);
@@ -21,6 +49,12 @@ const Index = ({ data }) => {
   const skills = get(data, 'site.siteMetadata.skills', false);
   const noBlog = !posts || !posts.length;
   const noPublications = !publications || !publications.length;
+  const imageLookup = buildImageLookup(get(data, 'allProjectImages.nodes', []));
+  const projectsWithThumbnails = (projects || []).map((project) => ({
+    ...project,
+    thumbnailAlt: `${project.name} thumbnail`,
+    thumbnailSrc: resolveThumbnailSrc(project.thumbnail, imageLookup),
+  }));
 
   return (
     <Layout>
@@ -30,7 +64,9 @@ const Index = ({ data }) => {
       {!noPublications && (
         <SectionPublications publications={publications} />
       )}
-      {projects && projects.length && <SectionProjects projects={projects} />}
+      {projects && projects.length && (
+        <SectionProjects projects={projectsWithThumbnails} />
+      )}
       {/* {!noBlog && <SectionBlog posts={posts} />} */}
       {/* {experience && experience.length && (
         <SectionExperience experience={experience} />
@@ -57,6 +93,7 @@ export const pageQuery = graphql`
           name
           description
           link
+          thumbnail
         }
         publications {
           name
@@ -114,6 +151,12 @@ export const pageQuery = graphql`
             subDescription
           }
         }
+      }
+    }
+    allProjectImages: allFile(filter: { sourceInstanceName: { eq: "images" } }) {
+      nodes {
+        relativePath
+        publicURL
       }
     }
   }

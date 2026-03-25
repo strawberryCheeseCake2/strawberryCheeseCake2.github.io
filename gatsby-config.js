@@ -17,24 +17,28 @@ module.exports = {
     // Content of the About Me section
     about: `I’m a senior design student at UNIST, exploring the intersection of design, technology, and AI. I create interactive systems that enrich human experiences and make everyday life smarter and more meaningful.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
+    // `thumbnail` accepts either an external URL or a file path from `src/images` such as `my-project.png`.
     projects: [
       {
         name: 'WordImagefier',
         description:
           'Video Generation AI-based Digital Vocabulary Book',
         link: 'https://www.youtube.com/watch?v=LRfVKgbvvtY',
+        thumbnail: 'wordimagefier.png',
       },
       {
         name: 'CaptureVoca',
         description:
           'Highlighted Word Extraction based Automated Vocabulary App',
         link: 'https://github.com/strawberryCheeseCake2/CaptureVoca',
+        thumbnail: 'capturevoca.jpg',
       },
       {
         name: 'CorrecTOEFL',
         description:
           'LLM-based TOEFL Writing Feedback App',
         link: 'https://github.com/strawberryCheeseCake2/CorrecToefl/tree/main',
+        thumbnail: 'correctoefl.png',
       },
     ],
     // Optional: List your publications, they must have `name` and `description`. `link` is optional.
